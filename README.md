@@ -16,9 +16,9 @@ Your computer needs an internet card (Tier 2 or Wireless) and the network must a
 Run this command in the OpenComputers shell:
 
 ```
-wget -f https://irislgtm.github.io/OC-Program-Template/bin/update.lua /bin/update
+wget -f https://username.github.io/reponame/bin/update.lua /bin/update
 ```
-
+Of course, when you use this as a template, please adjust the command to your specifications.
 Then run the updater:
 
 ```
