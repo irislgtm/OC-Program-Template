@@ -1,11 +1,10 @@
 --!/usr/bin/env luaf
 
 local component = require("component")
-local computer = require("computer")
 local shell = require("shell")
 local event = require("event")
 
-local args, opts = shell.parse(...)
+local _, opts = shell.parse(...)
 
 local function main()
   if not component.isAvailable("gpu") then

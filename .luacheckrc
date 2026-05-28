@@ -82,3 +82,7 @@ files["src/bin/"] = {
 files["src/lib/"] = {
   module = true,
 }
+
+files["src/etc/rc.d/"] = {
+  globals = {"start", "stop"},
+}

@@ -4,8 +4,7 @@ local robot = require("robot")
 local computer = require("computer")
 local shell = require("shell")
 
-local args, opts = shell.parse(...)
-local depth = tonumber(args[1]) or 1
+shell.parse(...)
 
 local function refuel()
   robot.select(1)
