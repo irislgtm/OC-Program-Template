@@ -16,10 +16,10 @@ Your computer needs an internet card (Tier 2 or Wireless) and the network must a
 Run this command in the OpenComputers shell:
 
 ```
-wget -f https://YOUR_USER.github.io/YOUR_REPO/bin/update.lua /bin/update
+wget -f https://username.github.io/reponame/bin/update.lua /bin/update
 ```
-
-Replace YOUR_USER with your GitHub username and YOUR_REPO with your repo name. Then run the updater:
+Of course, when you use this as a template, please adjust the command to your specifications.
+Then run the updater:
 
 ```
 update
