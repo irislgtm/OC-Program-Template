@@ -1,4 +1,4 @@
-.PHONY: all lint lint-ci test clean manifest
+.PHONY: all lint lint-ci clean manifest
 
 LUA ?= lua
 LUACHECK ?= luacheck
@@ -7,10 +7,10 @@ PUBLISH_DIR ?= src
 all: lint
 
 lint:
-	$(LUACHECK) src/ test/
+	$(LUACHECK) src/
 
 lint-ci:
-	$(LUACHECK) -q src/ test/
+	$(LUACHECK) -q src/
 
 manifest:
 	@echo "-- auto-generated" > $(PUBLISH_DIR)/manifest.lua
@@ -27,10 +27,7 @@ manifest:
 	@echo "}" >> $(PUBLISH_DIR)/manifest.lua
 	@echo "manifest.lua generated"
 
-test:
-	$(LUA) test/test_example.lua
-
 clean:
-	rm -f src/manifest.lua
+	rm -f src/manifest.lua src/lib/.gitkeep src/etc/.gitkeep src/home/.gitkeep scripts/.gitkeep
 	find . -name "*.out" -delete
 	find . -name "*.log" -delete
