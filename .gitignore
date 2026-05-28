@@ -1,0 +1,5 @@
+gooning/
+deploy/
+manifest.lua
+*.log
+*.out
